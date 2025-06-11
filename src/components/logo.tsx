@@ -11,8 +11,8 @@ export const Logo = ({
     <Image
       src="/img/CiptaArtLogo2-Photoroom.png"
       alt=""
-      height={10}
-      width={10}
+      height={100}
+      width={100}
       className={cn("text-foreground h-10 w-auto", className)}
     />
   );
@@ -28,8 +28,8 @@ export const LogoIcon = ({
     <Image
       src="/img/CiptaArtLogo2-Photoroom.png"
       alt=""
-      height={5}
-      width={5}
+      height={100}
+      width={100}
       className={cn("text-foreground h-5 w-auto", className)}
     />
   );
