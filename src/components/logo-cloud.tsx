@@ -14,53 +14,48 @@ export const LogoCloud = () => {
             <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
               <div className="flex">
                 <Image
-                  className="mx-auto h-10 w-fit dark:invert"
-                  src="img/infineonlogo.png"
+                  src="/img/infineonlogo.png"
                   alt="Infineon Logo"
-                  height={20}
-                  width={20}
-                  style={{ height: "auto", width: "100%" }}
+                  height={100}
+                  width={100}
+                  className="mx-auto h-10 w-fit dark:invert"
                 />
               </div>
 
               <div className="flex">
                 <Image
-                  className="mx-auto h-10 w-fit dark:invert"
-                  src="img\BP-Batam-Arti-Logo-2-Photoroom.png"
+                  src="/img/BP-Batam-Arti-Logo-2-Photoroom.png"
                   alt="BP Batam Logo"
-                  height={20}
-                  width={20}
-                  style={{ height: 'auto', width: '100%' }}
+                  height={100}
+                  width={100}
+                  className="mx-auto h-10 w-fit dark:invert"
                 />
               </div>
               <div className="flex">
                 <Image
-                  className="mx-auto h-30 w-fit dark:invert"
-                  src="img\alconLogo-(2).png"
+                  src="/img/alconLogo-(2).png"
                   alt="Alcon Logo"
-                  height={30}
-                  width={30}
-                  style={{ height: 'auto', width: '100%' }}
+                  height={200}
+                  width={200}
+                  className="mx-auto h-30 w-fit dark:invert"
                 />
               </div>
               <div className="flex">
                 <Image
-                  className="mx-auto h-8 w-fit dark:invert"
-                  src="img\j&tLogo-Photoroom.png"
+                  src="/img/j&tLogo-Photoroom.png"
                   alt="JNT Logo"
-                  height={20}
-                  width={20}
-                  style={{ height: 'auto', width: '100%' }}
+                  height={80}
+                  width={80}
+                  className="mx-auto h-8 w-fit dark:invert"
                 />
               </div>
               <div className="flex">
                 <Image
-                  className="mx-auto h-13 w-fit dark:invert"
-                  src="img\polologo.png"
+                  src="/img/polologo.png"
                   alt="Polo Ralph Lauren Logo"
-                  height={20}
-                  width={20}
-                  style={{ height: 'auto', width: '100%' }}
+                  height={130}
+                  width={130}
+                  className="mx-auto h-13 w-fit dark:invert"
                 />
               </div>
             </InfiniteSlider>

@@ -21,8 +21,10 @@ export default function Services() {
             <CardHeader className="pb-3">
               <CardDecorator>
                 <Image
-                  src="icons\3dsignageIconFIX-Photoroom.png"
+                  src="/icons/3dsignageIconFIX-Photoroom.png"
                   alt=""
+                  height={10}
+                  width={10}
                   className="h-10 w-auto"
                 />
               </CardDecorator>
@@ -42,8 +44,11 @@ export default function Services() {
             <CardHeader className="pb-3">
               <CardDecorator>
                 <Image
-                  src="icons\Signage-icon-FIX-Photoroom.png"
+                  src="/icons/Signage-icon-FIX-Photoroom.png"
                   alt="Signage Icon"
+                  height={10}
+                  width={10}
+
                   className="h-10 w-auto"
                 />
               </CardDecorator>
@@ -63,8 +68,10 @@ export default function Services() {
             <CardHeader className="pb-3">
               <CardDecorator>
                 <Image
-                  src="icons\wall-wrapping-icon-FIX-Photoroom.png"
+                  src="/icons/wall-wrapping-icon-FIX-Photoroom.png"
                   alt="wallwrapping icon"
+                  height={10}
+                  width={10}
                   className="h-10 w-auto"
                 />
               </CardDecorator>
@@ -84,8 +91,10 @@ export default function Services() {
             <CardHeader className="pb-3">
               <CardDecorator>
                 <Image
-                  src="icons\Signage-icon-FIX-Photoroom.png"
+                  src="/icons/Signage-icon-FIX-Photoroom.png"
                   alt="Billboard icon"
+                  height={10}
+                  width={10}
                   className="h-10 w-auto"
                 />
               </CardDecorator>
@@ -123,8 +132,10 @@ export default function Services() {
             <CardHeader className="pb-3">
               <CardDecorator>
                 <Image
-                  src="icons\Signage-icon-FIX-Photoroom.png"
+                  src="/icons/Signage-icon-FIX-Photoroom.png"
                   alt="Neonbox icon"
+                  height={10}
+                  width={10}
                   className="h-10 w-auto"
                 />
               </CardDecorator>
