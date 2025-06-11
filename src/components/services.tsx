@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Settings2, Sparkles, Zap } from "lucide-react";
 import { ReactNode } from "react";
 import { FaCar } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -20,7 +20,7 @@ export default function Services() {
           <div className="group shadow-zinc-950/5">
             <CardHeader className="pb-3">
               <CardDecorator>
-                <img
+                <Image
                   src="icons\3dsignageIconFIX-Photoroom.png"
                   alt=""
                   className="h-10 w-auto"
@@ -41,7 +41,7 @@ export default function Services() {
           <div className="group shadow-zinc-950/5">
             <CardHeader className="pb-3">
               <CardDecorator>
-                <img
+                <Image
                   src="icons\Signage-icon-FIX-Photoroom.png"
                   alt="Signage Icon"
                   className="h-10 w-auto"
@@ -62,7 +62,7 @@ export default function Services() {
           <div className="group shadow-zinc-950/5">
             <CardHeader className="pb-3">
               <CardDecorator>
-                <img
+                <Image
                   src="icons\wall-wrapping-icon-FIX-Photoroom.png"
                   alt="wallwrapping icon"
                   className="h-10 w-auto"
@@ -83,7 +83,7 @@ export default function Services() {
           <div className="group shadow-zinc-950/5">
             <CardHeader className="pb-3">
               <CardDecorator>
-                <img
+                <Image
                   src="icons\Signage-icon-FIX-Photoroom.png"
                   alt="Billboard icon"
                   className="h-10 w-auto"
@@ -122,7 +122,7 @@ export default function Services() {
           <div className="group shadow-zinc-950/5">
             <CardHeader className="pb-3">
               <CardDecorator>
-                <img
+                <Image
                   src="icons\Signage-icon-FIX-Photoroom.png"
                   alt="Neonbox icon"
                   className="h-10 w-auto"

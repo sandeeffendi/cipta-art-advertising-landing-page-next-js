@@ -6,7 +6,6 @@ import { TextEffect } from "@/components/ui/text-effect";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { HeroHeader } from "./header";
 import { LogoCloud } from "./logo-cloud";
-import { useScrollToSection } from "@/lib/scrolltosection";
 
 const transitionVariants = {
   item: {

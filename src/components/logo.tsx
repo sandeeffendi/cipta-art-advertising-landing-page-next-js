@@ -1,15 +1,14 @@
 import { cn } from "../lib/utils";
-import clsx from "clsx";
+import Image from "next/image";
 
 export const Logo = ({
   className,
-  uniColor,
 }: {
   className?: string;
   uniColor?: boolean;
 }) => {
   return (
-    <img
+    <Image
       src="img\CiptaArtLogo2-Photoroom.png"
       alt=""
       className={cn("text-foreground h-10 w-auto", className)}
@@ -19,13 +18,12 @@ export const Logo = ({
 
 export const LogoIcon = ({
   className,
-  uniColor,
 }: {
   className?: string;
   uniColor?: boolean;
 }) => {
   return (
-    <img
+    <Image
       src="img\CiptaArtLogo2-Photoroom.png"
       alt=""
       className={cn("text-foreground h-5 w-auto", className)}
@@ -35,7 +33,7 @@ export const LogoIcon = ({
 
 export const LogoStroke = ({ className }: { className?: string }) => {
   return (
-    <img
+    <Image
       src="img\CiptaArtLogo2-Photoroom.png"
       alt=""
       className={cn("text-foreground h-5 w-auto", className)}
