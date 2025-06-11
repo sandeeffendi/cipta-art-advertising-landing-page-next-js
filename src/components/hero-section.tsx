@@ -1,10 +1,12 @@
+"use client"
+
 import React from "react";
-import { Mail, SendHorizonal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { HeroHeader } from "./header";
 import { LogoCloud } from "./logo-cloud";
+import { useScrollToSection } from "@/lib/scrolltosection";
 
 const transitionVariants = {
   item: {
@@ -51,8 +53,10 @@ export default function HeroSection() {
                 as="p"
                 className="mx-auto mt-6 max-w-2xl text-pretty text-lg"
               >
-                Reklame yang dibuat dengan tepat bisa bikin brand kamu lebih gampang dikenali dan berkesan.
-                Kami siap bantu kamu dengan desain yang keren dan kualitas oke, supaya bisnis kamu makin menonjol di mata pelanggan.
+                Reklame yang dibuat dengan tepat bisa bikin brandmu lebih
+                gampang dikenali dan berkesan. Kami siap bantu kamu dengan
+                desain yang keren dan kualitas oke, supaya bisnismu makin
+                menonjol di mata pelanggan.
               </TextEffect>
 
               <AnimatedGroup
@@ -69,31 +73,9 @@ export default function HeroSection() {
                 }}
                 className="mt-12"
               >
-                <form action="" className="mx-auto max-w-sm">
-                  <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center rounded-[calc(var(--radius)+0.5rem)] border pr-2 shadow shadow-zinc-950/5 has-[input:focus]:ring-2">
-                    <Mail className="pointer-events-none absolute inset-y-0 left-4 my-auto size-4" />
-
-                    <input
-                      placeholder="Your mail address"
-                      className="h-12 w-full bg-transparent pl-12 focus:outline-none"
-                      type="email"
-                    />
-
-                    <div className="md:pr-1.5 lg:pr-0">
-                      <Button
-                        aria-label="submit"
-                        size="sm"
-                        className="rounded-(--radius)"
-                      >
-                        <span className="hidden md:block">Get Started</span>
-                        <SendHorizonal
-                          className="relative mx-auto size-5 md:hidden"
-                          strokeWidth={2}
-                        />
-                      </Button>
-                    </div>
-                  </div>
-                </form>
+                <Button>
+                  Discover Our Works
+                </Button>
 
                 <div
                   aria-hidden
