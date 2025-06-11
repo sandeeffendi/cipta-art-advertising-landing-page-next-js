@@ -10,22 +10,22 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
     {
-        name: 'Jonathan Yombo',
-        role: 'Software Engineer',
-        image: 'https://randomuser.me/api/portraits/men/1.jpg',
-        quote: 'Tailus is really extraordinary and very practical, no need to break your head. A real gold mine.',
+        name: 'Jonathan Doe',
+        role: 'Driver Ojek Online',
+        image: 'https://randomuser.me/api/portraits/men/7.jpg',
+        quote: 'Keren Kali Wak',
     },
     {
-        name: 'Yves Kalume',
-        role: 'GDE - Android',
-        image: 'https://randomuser.me/api/portraits/men/6.jpg',
-        quote: 'With no experience in webdesign I just redesigned my entire website in a few minutes with tailwindcss thanks to Tailus.',
+        name: 'Eren Jeger',
+        role: 'Kasir Indomaret',
+        image: 'https://randomuser.me/api/portraits/men/91.jpg',
+        quote: 'Ga nyesel bikin reklame disini',
     },
     {
         name: 'Yucel Faruksahan',
-        role: 'Tailkits Creator',
-        image: 'https://randomuser.me/api/portraits/men/7.jpg',
-        quote: 'Great work on tailfolio template. This is one of the best personal website that I have seen so far :)',
+        role: 'Buzzer Projo',
+        image: 'https://randomuser.me/api/portraits/men/83.jpg',
+        quote: 'Kerjanya rapi!. Terbaik lah di Batam :)',
     },
 ]
 

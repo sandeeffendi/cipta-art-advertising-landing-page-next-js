@@ -11,16 +11,16 @@ export default function Projects() {
           <div className="relative mb-6 sm:mb-0">
             <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
               <Image
-                src="/payments.png"
+                src="/img/3d-signage-project-dark.png"
                 className="hidden rounded-[15px] dark:block"
-                alt="payments illustration dark"
+                alt="3d Signage dark"
                 width={1207}
                 height={929}
               />
               <Image
                 src="/img/3d-signage-project.png"
                 className="rounded-[15px] shadow dark:hidden"
-                alt="payments illustration light"
+                alt="3d Signage light"
                 width={1207}
                 height={929}
               />
@@ -29,24 +29,26 @@ export default function Projects() {
 
           <div className="relative space-y-4">
             <h1 className="text-muted-foreground font-bold text-left text-4xl">
-              Neonbox
+              3D Signage
             </h1>
             <p className="text-muted-foreground">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
-              voluptates animi asperiores minima modi. Magni exercitationem
-              accusantium nesciunt cumque dignissimos?
+              3D Signage memberikan kesan eksklusif dan profesional,
+              menjadikannya pilihan populer bagi berbagai jenis bisnis. Umumnya
+              digunakan sebagai elemen identitas visual dan dekorasi interior di
+              area seperti resepsionis, rooftop, fasad bangunan, hingga ruang
+              publik.
             </p>
             <p className="text-muted-foreground">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              at repellat quod sint debitis cum!
+              3D Signage dapat dibuat dari berbagai bahan seperti akrilik,
+              stainless steel, aluminium, dan besi semua dapat disesuaikan
+              dengan kebutuhan dan selera pelanggan.
             </p>
 
             <div className="pt-6">
-              <blockquote className="border-l-4 pl-4">
+              <blockquote className="border-l-4 pl-4 italic font-semibold">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum tenetur voluptatibus, cupiditate quae atque
-                  accusantium architecto modi vero officia vitae.
+                  Memberi dimensi nyata pada brand kamu dengan signage yang
+                  menonjol dan elegan.
                 </p>
               </blockquote>
             </div>
@@ -54,24 +56,26 @@ export default function Projects() {
 
           <div className="relative space-y-4">
             <h1 className="text-muted-foreground font-bold text-right text-4xl">
-              Neonbox
+              Backlite Letter Sign
             </h1>
             <p className="text-muted-foreground text-right">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              sed tempore nam debitis tenetur cumque qui doloribus molestiae
-              numquam.
+              Backlite Letter Sign adalah jenis signage huruf timbul dengan
+              pencahayaan dari belakang (backlit), menghasilkan efek cahaya yang
+              lembut dan mewah. Cocok untuk kebutuhan branding yang ingin tampil
+              eksklusif, baik di luar ruangan maupun dalam ruangan—seperti di
+              fasad gedung, lobi kantor, toko retail, dan ruang pamer.
             </p>
             <p className="text-muted-foreground text-right">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-              reiciendis alias unde dignissimos quas exercitationem!
+              Cocok untuk kebutuhan branding yang ingin tampil eksklusif, baik
+              di luar ruangan maupun dalam ruangan seperti di fasad gedung, lobi
+              kantor, toko retail, dan showroom.
             </p>
 
             <div className="pt-6">
               <blockquote className="border-r-4 pr-4">
-                <p className="text-right">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
-                  exercitationem veniam officiis adipisci dolore obcaecati ipsum
-                  numquam autem dignissimos velit.
+                <p className="text-right italic font-semibold">
+                  Ciptakan kesan elegan di siang hari dan tampil memukau di
+                  malam hari.
                 </p>
               </blockquote>
             </div>
@@ -79,16 +83,16 @@ export default function Projects() {
           <div className="relative mb-6 sm:mb-0">
             <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
               <Image
-                src="/payments.png"
+                src="/img/3d-backlite-project-dark.png"
                 className="hidden rounded-[15px] dark:block"
-                alt="payments illustration dark"
+                alt="Letter Sign Dark"
                 width={1207}
                 height={929}
               />
               <Image
                 src="/img/3d-backlite-project.png"
                 className="rounded-[15px] shadow dark:hidden"
-                alt="payments illustration light"
+                alt="Letter Sign Light"
                 width={1207}
                 height={929}
               />
@@ -98,16 +102,16 @@ export default function Projects() {
           <div className="relative mb-6 sm:mb-0">
             <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
               <Image
-                src="/payments.png"
+                src="/img/BP-cargo-3dSignage-dark.png"
                 className="hidden rounded-[15px] dark:block"
-                alt="payments illustration dark"
+                alt="Facade Sign Dark"
                 width={1207}
                 height={929}
               />
               <Image
                 src="/img/BP-cargo-3dSignage.png"
                 className="rounded-[15px] shadow dark:hidden"
-                alt="payments illustration light"
+                alt="Facade Sign Light"
                 width={1207}
                 height={929}
               />
@@ -116,24 +120,29 @@ export default function Projects() {
 
           <div className="relative space-y-4">
             <h1 className="text-muted-foreground font-bold text-left text-4xl">
-              Neonbox
+              Facade Sign
             </h1>
             <p className="text-muted-foreground">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
-              voluptates animi asperiores minima modi. Magni exercitationem
-              accusantium nesciunt cumque dignissimos?
+              Facade Sign adalah papan nama yang dipasang pada bagian depan
+              bangunan yang berfungsi sebagai penanda utama sekaligus elemen
+              branding yang menarik perhatian. Dengan desain yang mencolok dan
+              material tahan cuaca, Facade Sign cocok untuk toko, kantor, kafe,
+              dan berbagai jenis bisnis lainnya. Tersedia dalam berbagai pilihan
+              bentuk, ukuran, dan bahan seperti akrilik, galvanis, maupun
+              stainless steel—semua dapat disesuaikan dengan konsep visual usaha
+              Kamu.
             </p>
             <p className="text-muted-foreground">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              at repellat quod sint debitis cum!
+              Tersedia dalam berbagai pilihan bentuk, ukuran, dan bahan seperti
+              akrilik, galvanis, maupun stainless steel semua dapat disesuaikan
+              dengan konsep visual usaha Kamu.
             </p>
 
             <div className="pt-6">
-              <blockquote className="border-l-4 pl-4">
+              <blockquote className="border-l-4 pl-4 italic font-semibold">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum tenetur voluptatibus, cupiditate quae atque
-                  accusantium architecto modi vero officia vitae.
+                  Beri kesan pertama yang kuat dengan signage yang mencerminkan
+                  identitas bisnis Anda.
                 </p>
               </blockquote>
             </div>
