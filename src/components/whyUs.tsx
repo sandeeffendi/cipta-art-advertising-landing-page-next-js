@@ -19,13 +19,13 @@ export default function WhyUs() {
             </p>
           </div>
         </div>
-        <Image
+        {/* <Image
           className="rounded-(--radius) grayscale"
           src="/img/3d-backlite-project.png"
           alt="team image"
           fill
           loading="lazy"
-        />
+        /> */}
 
         <div className="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">
           <div className="space-y-3">
