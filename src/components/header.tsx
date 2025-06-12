@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import React, { useCallback } from "react";
+import React from "react";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "./mode-toggle";
 import { useScrollToSection } from "@/lib/scrolltosection";
@@ -48,7 +48,7 @@ export const HeroHeader = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                <span onClick={() => scrollToSection('hero')}>
+                <span onClick={() => scrollToSection("hero")}>
                   <Logo />
                 </span>
               </Link>
