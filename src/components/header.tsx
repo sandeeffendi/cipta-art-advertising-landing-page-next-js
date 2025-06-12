@@ -26,7 +26,9 @@ export const HeroHeader = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
   const scrollToSection = useScrollToSection();
+
   return (
     <header>
       <nav
@@ -42,9 +44,7 @@ export const HeroHeader = () => {
         >
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
             <div className="flex w-full justify-between lg:w-auto">
-              <Button
-                className="bg-transparent hover:bg-transparent border-none shadow-none cursor-pointer flex items-center space-x-2"
-              >
+              <Button className="bg-transparent hover:bg-transparent border-none shadow-none cursor-pointer flex items-center space-x-2">
                 <span onClick={() => scrollToSection("hero")}>
                   <Logo />
                 </span>
@@ -64,16 +64,8 @@ export const HeroHeader = () => {
               <ul className="flex gap-8 text-sm">
                 {menuItems.map((item, index) => (
                   <li key={index}>
-                    <Button
-                      className="bg-transparent hover:bg-transparent border-transparent shadow-none cursor-pointer text-muted-foreground hover:text-accent-foreground block duration-150"
-                    >
-                      <span
-                        onClick={() =>
-                          scrollToSection(item.href.replaceAll("#", ""))
-                        }
-                      >
-                        {item.name}
-                      </span>
+                    <Button className="bg-transparent hover:bg-transparent border-transparent shadow-none cursor-pointer text-muted-foreground hover:text-accent-foreground block duration-150">
+                      <span onClick={() => (scrollToSection(item.href.replaceAll("#","")))}>{item.name}</span>
                     </Button>
                   </li>
                 ))}
@@ -85,10 +77,14 @@ export const HeroHeader = () => {
                 <ul className="space-y-6 text-base">
                   {menuItems.map((item, index) => (
                     <li key={index}>
-                      <Button
-                        className="bg-none border-none cursor-pointer text-muted-foreground hover:text-accent-foreground block duration-150"
-                      >
-                        <span>{item.name}</span>
+                      <Button className="bg-transparent border-transparent cursor-pointer text-muted-foreground hover:text-accent-foreground block duration-150">
+                        <span
+                          onClick={() =>
+                            scrollToSection(item.name.replaceAll("#", ""))
+                          }
+                        >
+                          {item.name}
+                        </span>
                       </Button>
                     </li>
                   ))}
@@ -98,7 +94,11 @@ export const HeroHeader = () => {
                 <Button
                   asChild
                   size="sm"
-                  className={cn(isScrolled ? "lg:inline-flex cursor-pointer" : "cursor-pointer")}
+                  className={cn(
+                    isScrolled
+                      ? "lg:inline-flex cursor-pointer"
+                      : "cursor-pointer"
+                  )}
                   onClick={() => scrollToSection("contact")}
                 >
                   <span>Contact Us</span>

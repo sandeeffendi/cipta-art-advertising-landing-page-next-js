@@ -18,7 +18,7 @@ export default function ContactSection() {
                     </div>
 
                     <form
-                        action=""
+                        action="#"
                         className="**:[&>label]:block mt-12 space-y-6 *:space-y-3">
                         <div>
                             <Label htmlFor="name">Full name</Label>
@@ -46,7 +46,7 @@ export default function ContactSection() {
                             />
                         </div>
 
-                        <Button>Submit</Button>
+                        <Button><a href="/message-sent">Submit</a></Button>
                     </form>
                 </Card>
             </div>
