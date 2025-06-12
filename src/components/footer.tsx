@@ -2,7 +2,7 @@
 
 import { Logo } from "@/components/logo";
 import { useScrollToSection } from "@/lib/scrolltosection";
-import Link from "next/link";
+import { Button } from "./ui/button";
 
 const links = [
   {
@@ -28,29 +28,26 @@ export default function FooterSection() {
   return (
     <footer className="py-16 md:py-32">
       <div className="mx-auto max-w-5xl px-6">
-        <Link
-          href="#hero"
-          aria-label="go home"
-          className="mx-auto block size-fit"
+        <Button
+          className="bg-transparent border-transparent hover:bg-transparent cursor-pointer shadow-none mx-auto block size-fit"
         >
           <span onClick={() => scrollToSection('hero')}>
             <Logo />
           </span>
-        </Link>
+        </Button>
 
         <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
           {links.map((link, index) => (
-            <Link
+            <Button
               key={index}
-              href={link.href}
-              className="text-muted-foreground hover:text-primary block duration-150"
+              className="bg-transparent border-transparent hover:bg-transparent cursor-pointer shadow-none text-muted-foreground hover:text-primary block duration-150"
             >
               <span
                 onClick={() => scrollToSection(link.href.replaceAll("#", ""))}
               >
                 {link.title}
               </span>
-            </Link>
+            </Button>
           ))}
         </div>
         <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">

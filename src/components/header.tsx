@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -43,15 +42,13 @@ export const HeroHeader = () => {
         >
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
             <div className="flex w-full justify-between lg:w-auto">
-              <Link
-                href="/"
-                aria-label="home"
-                className="flex items-center space-x-2"
+              <Button
+                className="bg-transparent hover:bg-transparent border-none shadow-none cursor-pointer flex items-center space-x-2"
               >
                 <span onClick={() => scrollToSection("hero")}>
                   <Logo />
                 </span>
-              </Link>
+              </Button>
 
               <button
                 onClick={() => setMenuState(!menuState)}
@@ -67,9 +64,8 @@ export const HeroHeader = () => {
               <ul className="flex gap-8 text-sm">
                 {menuItems.map((item, index) => (
                   <li key={index}>
-                    <Link
-                      href={item.href}
-                      className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                    <Button
+                      className="bg-transparent hover:bg-transparent border-transparent shadow-none cursor-pointer text-muted-foreground hover:text-accent-foreground block duration-150"
                     >
                       <span
                         onClick={() =>
@@ -78,7 +74,7 @@ export const HeroHeader = () => {
                       >
                         {item.name}
                       </span>
-                    </Link>
+                    </Button>
                   </li>
                 ))}
               </ul>
@@ -89,12 +85,11 @@ export const HeroHeader = () => {
                 <ul className="space-y-6 text-base">
                   {menuItems.map((item, index) => (
                     <li key={index}>
-                      <Link
-                        href={item.href}
-                        className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                      <Button
+                        className="bg-none border-none cursor-pointer text-muted-foreground hover:text-accent-foreground block duration-150"
                       >
                         <span>{item.name}</span>
-                      </Link>
+                      </Button>
                     </li>
                   ))}
                 </ul>
@@ -103,7 +98,7 @@ export const HeroHeader = () => {
                 <Button
                   asChild
                   size="sm"
-                  className={cn(isScrolled ? "lg:inline-flex" : "")}
+                  className={cn(isScrolled ? "lg:inline-flex cursor-pointer" : "cursor-pointer")}
                   onClick={() => scrollToSection("contact")}
                 >
                   <span>Contact Us</span>
