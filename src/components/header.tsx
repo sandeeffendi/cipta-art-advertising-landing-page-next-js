@@ -3,15 +3,16 @@ import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import React from "react";
+import React, { useCallback } from "react";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "./mode-toggle";
+import { useScrollToSection } from "@/lib/scrolltosection";
 
 const menuItems = [
-  { name: "Projects", href: "#project" },
   { name: "Services", href: "#services" },
+  { name: "Projects", href: "#project" },
   { name: "Clients", href: "#testimonials" },
-  { name: "About", href: "#about" },
+  { name: "About", href: "#whyUs" },
 ];
 
 export const HeroHeader = () => {
@@ -25,6 +26,8 @@ export const HeroHeader = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const scrollToSection = useScrollToSection();
   return (
     <header>
       <nav
@@ -45,7 +48,9 @@ export const HeroHeader = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                <Logo />
+                <span onClick={() => scrollToSection('hero')}>
+                  <Logo />
+                </span>
               </Link>
 
               <button
@@ -66,7 +71,13 @@ export const HeroHeader = () => {
                       href={item.href}
                       className="text-muted-foreground hover:text-accent-foreground block duration-150"
                     >
-                      <span>{item.name}</span>
+                      <span
+                        onClick={() =>
+                          scrollToSection(item.href.replaceAll("#", ""))
+                        }
+                      >
+                        {item.name}
+                      </span>
                     </Link>
                   </li>
                 ))}
@@ -92,11 +103,10 @@ export const HeroHeader = () => {
                 <Button
                   asChild
                   size="sm"
-                  className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
+                  className={cn(isScrolled ? "lg:inline-flex" : "")}
+                  onClick={() => scrollToSection("contact")}
                 >
-                  <Link href="#">
-                    <span>Contact Us</span>
-                  </Link>
+                  <span>Contact Us</span>
                 </Button>
                 <ModeToggle />
               </div>
