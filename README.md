@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cipta Art Advertising – Company Landing Page
 
-## Getting Started
+This is a prototype landing page website for **Cipta Art Advertising**, developed to establish and strengthen the company's digital presence. The goal is to increase brand awareness and provide a professional online introduction to the company's services and portfolio.
 
-First, run the development server:
+**Status**: Prototype – Not yet in production  
+**Live Demo**: [cipta-art-advertising-landing-page.vercel.app](https://cipta-art-advertising-landing-page.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Project Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Cipta Art Advertising is a company in the advertising industry. This landing page was designed and developed to represent its brand digitally, providing essential service information, product showcases, and contact details in a responsive and modern layout.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚙️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+**Core Frameworks & Languages**
+- [Next.js 15](https://nextjs.org/)
+- [React 18](https://reactjs.org/)
+- [TypeScript 5](https://www.typescriptlang.org/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Styling**
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [tw-animate-css](https://www.npmjs.com/package/tw-animate-css)
+- [tailwind-merge](https://tailwind-merge.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**UI Libraries & Utilities**
+- [Radix UI Components](https://www.radix-ui.com/)
+  - Avatar, Select, Label, Dropdown Menu
+- [Lucide Icons](https://lucide.dev/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [React Spring](https://www.react-spring.dev/)
+- [React Use Measure](https://github.com/pmndrs/react-use-measure)
+- [React Hookz Web](https://react-hookz.github.io/web/)
+- [Next Themes](https://github.com/pacocoursey/next-themes)
+- `clsx`, `class-variance-authority` for conditional styling
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💡 Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Dark mode toggle**
+- **Responsive design** for desktop and mobile
+- **Service information & product showcase**
+- **Contact info section**
+- **Animated transitions** for smooth UX
+
+---
+
+## 🔧 Development Process
+
+The development was guided by a prototype-first approach:
+
+1. Defined layout structure and selected a color palette.
+2. Prepared content and copywriting for each section.
+3. Collected and organized visual assets (icons, product images).
+4. Initialized project using `create-next-app` with Tailwind CSS setup.
+5. Developed responsive sections and components.
+6. Integrated dark mode, animation, and UI refinements.
+7. Deployed using [Vercel](https://vercel.com).
+
+---
+
+## Evaluation & Future Plans
+
+### ❌ Current Limitations
+- No backend integration
+- Contact form lacks a submission handler
+- Not optimized for SEO
+
+### ✅ Future Improvements
+- Add SEO metadata and sitemap
+- Implement form submission handler (e.g., using NodeMailer or external API)
+- Integrate basic backend to manage leads or messages
+
+---
